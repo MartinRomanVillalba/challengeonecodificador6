@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f4fc;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorTexto {
+  position: absolute;
+  left: 200px;
+  width: 500px;
+  height: 500px;
+}
+
+.cajatexto {
+  width: 80%;
+  height: 100%;
+  border: solid 1px #0A3871;
+  background-color: #f4f4fc;
+  color: #0A3871;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  padding: 10px;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.cajatexto:hover {
+  border-color: #0A75BC;
+}
+
+.alerta {
+  display: flex;
+  margin-top: 20px;
+}
+
+.botones {
+  height: 80px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-encriptar,
+.boton-desencriptar,
+.boton-copiar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-encriptar {
+  background-color: #0A3871;
+  color: white;
+  border: none;
+}
+
+.boton-encriptar:hover {
+  background-color: #0A75BC;
+}
+
+.boton-desencriptar {
+  background-color: #D8DFE8;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+
+.boton-desencriptar:hover {
+  background-color: #ffffff;
+}
+
+.boton-copiar {
+  background-color: #ffffff;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+
+.boton-copiar:hover {
+  background-color: #0A3871;
+  color: white;
+}
+
+.seccion2 {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  right: -250px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.muneco {
+  position: absolute;
+  left: 30px;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.parrafo {
+  position: absolute;
+  box-sizing: border-box;
+  top: 350px;
+  left: 50px;
+}
+
+.parrafo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: #343A40;
+}
+
+.parrafo p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #495057;
+}
+
+.resultado {
+  position: absolute;
+  bottom: 100px;
+  width: 320px;
+  height: 450px;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 25px;
+}
+
+.resultado p {
+  color: #495057;
+  font-size: 25px;
+  white-space: pre-line;
+}
+
+.copiar {
+  display: flex;
+  position: absolute;
+  bottom: 400px;
+  top: 450px;
+  padding-left: 40px;
+}
+
+.boton-copiar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  color: #0A3871;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #0A3871;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  right: 4px;
+}
+
+.ocultar {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .contenedorTexto {
+    position: static;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    order: 1;
+  }
+
+  .cajatexto{
+    width: 260px;
+    height: 500px;
+  }
+
+  .alerta {
+    order: 2;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .botones {
+    order: 3;
+  }
+
+  .seccion2 {
+    position: relative;
+    width: 90%;
+    height: 200px;
+    right: 0;
+    order: 4;
+  }
+
+  .muneco {
+    display: none; 
+  }
+
+  .parrafo {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .resultado {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px; 
+    order: 5; 
+  }
+
+  .copiar {
+    bottom: 50px;
+    top: auto;
+    order: 6; 
+    position: absolute;
+    width: 75%;
+    right: 25px;
+  }
+
+  .boton-copiar {
+    width: 80%;
+    margin: 10px 0; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedorTexto {
+    position: static;
+    left: 0;
+    width: 80%;
+    max-width: 400px; 
+    margin: 0 auto; 
+    order: 1;
+  }
+
+  .alerta,
+  .botones {
+    order: 2;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .seccion2 {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto; 
+    order: 3;
+    right: 0; 
+  }
+
+  .copiar {
+    bottom: 70px;
+    top: auto;
+    order: 4;
+    width: 80%;
+    max-width: 400px; 
+    margin: 0 auto; 
+    right: 20px;
+  }
+
+  .muneco {
+    display: none;
+  }
+
+  .boton-encriptar,
+  .boton-desencriptar{
+    width: 210px; 
+    height: 50px; 
+    margin-right: 10px;
+  }
+
+  .parrafo{
+    top: 50px;
+  }
+}

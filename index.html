@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <img src="img/Logo.svg" alt="logo">
+    </header>
+
+    <main>
+        <section class="seccion1">
+        <div class="contenedorTexto">
+          <textarea placeholder="Ingrese su texto" class="cajatexto"></textarea>
+        </div>
+      </section>
+
+      <section class="seccion2">
+        <div class="muneco">
+          <img src="img/Muñeco.svg" alt="muneco">
+        </div>
+        <div class="parrafo">
+          <h3>Ningun mensaje fue <br> encontrado</h3>
+          <p>Ingrese el texto que desees encriptar o <br> desencriptar.</p>
+        </div>
+        <div class="copiar">
+          <input type="button" value="Copiar" class="boton-copiar">
+        </div>
+        <div class="resultado">
+          <p class="texto-resultado"></p>
+        </div>
+      </section>
+
+      <div class="alerta">
+        <img src="img/alerta.svg" alt="alerta">
+        <p>Solo letras minusculas y sin acentos</p>
+      </div>
+      <div class="botones">
+        <input type="button" value="Encriptar" class="boton-encriptar">
+        <input type="button" value="Desencriptar" class="boton-desencriptar">
+      </div>
+    </main>
+    <footer>
+      <p>Creado por [Villalba Martín] &copy; [2024]</p>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
