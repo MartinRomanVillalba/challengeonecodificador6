@@ -40,7 +40,6 @@ function validarTexto(texto){
 }
 
 function mostrarAlerta() {
-  // Mostrar una alerta o realizar alguna acción cuando el texto no cumple con la validación
   alert("Ingrese solo letras minúsculas y sin acentos");
 }
 
